@@ -4,6 +4,7 @@ import OpenAI, { APIError } from "openai";
 
 import { increaseApiLimit, checkApiLimit } from "@/lib/api-limits";
 import { checkSubscription } from "@/lib/subscription";
+export const runtime = 'edge'; // Add this line to enable Edge Runtime
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,

@@ -3,6 +3,7 @@ import { auth } from "@clerk/nextjs";
 import { checkSubscription } from "@/lib/subscription";
 import { NextResponse } from "next/server";
 import { increaseApiLimit, checkApiLimit } from "@/lib/api-limits";
+export const runtime = 'edge'; // Add this line to enable Edge Runtime
 
 const replicate = new Replicate({
   auth: process.env.REPLICATE_API_TOKEN!,

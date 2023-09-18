@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import OpenAI, { APIError } from "openai";
 import { checkSubscription } from "@/lib/subscription";
 import { increaseApiLimit, checkApiLimit } from "@/lib/api-limits";
+export const runtime = 'edge'; // Add this line to enable Edge Runtime
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
