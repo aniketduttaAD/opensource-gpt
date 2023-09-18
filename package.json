@@ -50,6 +50,7 @@
     "zustand": "^4.4.1"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.6.1",
     "prisma": "^5.3.1"
   }
 }
